@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UTS</title>
+	<style>
+body {
+	background: #535d3c;
+	margin:0;
+	font-family: Arial;
+}
+ 
+hr {
+	border:0;
+	background:#dedede;
+	height:1px;
+}		
+ 
+header{
+	text-align: center;
+	color: #ffffff;
+}
+ 
+header .judul{
+	font-size: 17pt;
+}
+ 
+header .desc {
+	font-size: 11pt;
+}
+ 
+.wrap {
+	width: 950px;
+	margin:25px auto;
+}
+ 
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+	list-style: none;
+	float:left;
+	padding:0;
+	width: 650px;
+	margin:0 0 0;
+	background: #1abc9c;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+ 
+nav.menu ul li {
+	margin:0;
+	float:left;
+}
+ 
+nav.menu ul a {
+	padding:20px;
+	display:block;
+	font-weight:700;
+	font-size: 20px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+ 
+nav.menu ul a:hover {
+	text-decoration: line-through;
+	background:#16a085;
+}
+ 
+.sidebar {
+	float:right;
+	width:200px;
+}
+ 
+.sidebar .widget {
+	padding:20px;
+	margin:0 0 30px;
+	background:#fff;
+	border-bottom: 2px solid #fff;
+	transition: all 0.5s ease;
+}
+ 
+.sidebar .widget:hover {
+	border-bottom: 2px solid #3498db;
+}
+ 
+.sidebar .widget h2 {
+	padding:0;
+	margin:0 0 15px;
+	color:#6F00FF;
+	font-size: 18px;
+	font-weight:800;
+	text-transform: uppercase;
+}
+ 
+.sidebar .widget p {
+	font-size: 14px;
+}
+ 
+.sidebar .widget p:last-child {
+	margin:0;
+}
+ 
+.blog {
+	float:left;
+}
+ 
+.conteudo {
+	width:600px;
+	padding:25px;
+	margin:25px auto;
+	background: #fff;
+	border:1px solid #dedede;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+}
+ 
+.conteudo img {
+	
+	margin:0 0 25px -25px;
+	
+}
+ 
+.conteudo h1 {
+	padding:0;
+	margin:0 0 15px;
+	font-weight: normal;
+	color: #666;
+	font-family: Georgia;
+}
+ 
+.conteudo p:last-child {
+	margin: 0;
+}
+ 
+.conteudo .continue-lendo {
+	color:#000;
+	transition: all 1s ease;
+	text-decoration: none;
+	font-weight: 700; 
+}
+ 
+.conteudo .continue-lendo:hover {
+	color: red;
+	margin-left:25px;
+}
+ 
+.post-info {
+	float: right;
+	font-size: 12px;
+	margin: -10px 0 15px;
+	text-transform: uppercase;
+}
+ 
+@media screen and (max-width: 960px) {
+ 
+	.header {
+		position:inherit;
+	}
+ 
+	.wrap {
+		width: 90%;
+		margin:25px auto;
+	}
+	.sidebar {
+		width:100%;
+		margin:25px 0 0;
+		float:right;
+	}
+ 
+	.sidebar .widget {
+		padding:5%;
+	}
+ 
+	nav.menu ul {
+		width: 100%;
+	}
+ 
+	nav.menu ul {
+		float:inherit;
+	}
+ 
+	nav.menu ul li {
+		float:inherit;
+		margin:0;
+	}
+ 
+	nav.menu ul a {
+		padding:15px;
+		font-size: 16px;
+		border-top:1px solid #1abf9f;
+		border-bottom:1px solid #16a085;
+	}
+ 
+	.blog {
+		width:90%;
+	}
+ 
+	.conteudo {
+		float:inherit;
+		margin:0 auto 25px;
+		width:101%;
+		border:1px solid #dedede;
+		padding:10%;  
+		background: #fff;
+	}
+ 
+	.conteudo img {
+		max-width: 110%;
+		margin:0 0 25px -5%;
+		min-width: 110%;
+	}
+ 
+	.conteudo .continue-lendo:hover {
+		margin-left:0;
+	}
+ 
+ 
+}
+ 
+@media screen  {
+ 
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+ 
+	.sidebar {
+		display:none
+	}
+	.post-info {
+		display:none;
+	}
+ 
+	.conteudo {
+		margin:25px auto;
+	}
+ 
+	.conteudo img {
+		margin:-5% 0 25px -5%;
+	}			
+}
+</style>
+</head>
+<body>
+	
+	<!-- header woy -->
+	<header>
+		<h1 class="judul">Ujian Tengah Semester</h1>
+		<p class="desc">Suruh membuat Homepage hehe</p>
+	</header>
+	<!-- ending -->
+	
+	<div class="wrap">
+		<!-- menu woy -->
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="4.html">Home</a>
+				</li>
+				<li>
+					<a href="#">Tutorial</a>
+				</li>
+				<li>
+					<a href="5.html">Biodata</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- ending menu -->
+ 
+		<!-- bagian sidebar website -->
+		<aside class="sidebar">
+			<div class="widget">
+				<center><h2>Identitas</h2></center>
+				<p>Nama&nbsp:&nbsp<b>&nbspIrfan&nbspAldin&nbspAlifian</b><br>
+				   NIM&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp<b>01716147170</b>
+				</p>
+			</div>
+			<div class="widget">
+				<center><h2>Deskripsi</h2></center>
+				<p align="justify">Ini adalah Ujian Tengah Semester dari mata kuliah Web Design. Di dalam web ini terdapat pengenalan HTML, CSS, dan Java.</p>
+			</div>
+		</aside>
+		<!-- akhir bagian sidebar website -->
+ 
+		<!-- Blog -->
+		<div class="blog">
+			
+			<div class="conteudo">
+				
+				<center><h1> Biodata </h1></center>
+				<hr>
+				<hr>
+				<br>
+				<br>
+				<center><img src="11.jpg" alt="Aldin" width="200" height="200" ></center>
+				
+			</div>
+			<div class="conteudo">
+				<div class="post-info">
+					Dibuat&nbspoleh<b>&nbsp&nbspIrfan&nbspAldin&nbspAlifian</b>
+				</div>
+				<h1> Pengenalan CSS </h1>
+				<hr>
+				<hr>
+				<video width="590" controls>
+                 <source src="2.mp4" type="video/mp4">
+                 <source src="2.ogg" type="video/ogg">
+                 Your browser does not support HTML5 video.
+                </video>
+				<p align="justify">
+					Di atas merupakan video penjelasan tentang CSS. <b>CSS</b> adalah singkatan dari <i>Cascading Style Sheets</i>. Jika diterjemahkan ke bahasa Indonesia secara harfiah, CSS berarti “lembar penataan menurun”. Namun secara konteks, <i>Cascading Style Sheets</i> adalah kumpulan perintah yang digunakan untuk menjelaskan tampilan sebuah halaman situs web dalam mark-up language. Untuk penjelasan lebih lanjut silakan klik Artikel di bawah ini.
+				</p>				
+				<a href="https://www.dewaweb.com/blog/belajar-css-pengertian-peran-fungsi-dan-macamnya/" class="continue-lendo">ARTIKEL → →</a>
+			</div>
+			<div class="conteudo">
+				<div class="post-info">
+					Dibuat&nbspoleh<b>&nbsp&nbspIrfan&nbspAldin&nbspAlifian</b>
+				</div>
+				<h1> Pengenalan HTML </h1>
+				<hr>
+				<hr>
+				<video width="590" controls>
+                 <source src="3.mp4" type="video/mp4">
+                 <source src="3.ogg" type="video/ogg">
+                 Your browser does not support HTML5 video.
+                </video>
+				<p align="justify">
+					<i>Hypertext Markup Language</i> (<b>HTML</b>) adalah sebuah bahasa markah yang digunakan untuk membuat sebuah halaman web, menampilkan berbagai informasi di dalam sebuah penjelajah web Internet dan pemformatan hiperteks sederhana yang ditulis dalam berkas format ASCII agar dapat menghasilkan tampilan wujud yang terintegerasi. Dengan kata lain, berkas yang dibuat dalam perangkat lunak pengolah kata dan disimpan dalam format ASCII normal sehingga menjadi halaman web dengan perintah-perintah <b>HTML</b>. Untuk penjelasan lebih lanjut silakan klik Artikel di bawah ini.
+				</p>				
+				<a href="https://www.codepolitan.com/belajar-html-dasar" class="continue-lendo">ARTIKEL → →</a>
+		<!-- akhir bagian konten Blog -->
+	</div>
+ 
+</body>
+</html>

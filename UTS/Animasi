@@ -1,0 +1,264 @@
+<head>
+<title>UTS Aldin</title>
+<style>
+html,body{
+    height:100%;
+    max-width:100%;
+    margin:0;
+    font-family: Orbitron;
+	}
+/* background gerak */
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {    
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+.bggerak{
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+}
+
+.bintang {
+ background: black url(gambar/stars.png) repeat;
+ position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+}
+
+.twink{
+	width:10000px;
+	height: 100%;
+	background: transparent url("gambar/twinkle.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 30s linear infinite;
+  -ms-animation:move-background 30s linear infinite;
+  -o-animation:move-background 30s linear infinite;
+  -webkit-animation:move-background 30s linear infinite;
+  animation:move-background 30s linear infinite;
+	
+}
+
+.awanawan{
+	width:10000px;
+	height: 100%;
+	background: transparent url("gambar/awan.png") repeat;
+	background-size: 500px 500px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+
+   -moz-animation:move-background 100s linear infinite;
+  -ms-animation:move-background 100s linear infinite;
+  -o-animation:move-background 100s linear infinite;
+  -webkit-animation:move-background 100s linear infinite;
+  animation:move-background 100s linear infinite;
+}
+img{
+  height: 70vh;
+  width:70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+}
+/* Ending Animasi BG*/
+
+.placeholder{
+  height:100%;
+  
+}
+#universe{
+    width:100%;
+}
+
+#containerId{
+    position:absolute;
+    top:3em;
+    left:0;
+    right:0;
+    margin:30px auto;
+    color :hsl(0, 0%, 93%);
+    border:5px solid rgb(255, 77, 255);
+    border-radius: 5px;
+    padding:1em;
+    width:30em;
+    height: 30em;
+    text-align:center;
+    display:inline-block;
+    text-decoration:none;
+    background: linear-gradient(-35deg, rgba(41, 5, 99, 0.4), rgba(79, 17, 138, 0.4));
+    z-index:99;
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-self: center;
+}
+
+h1{
+    font-size: 3em;
+    margin-top: 0;
+    height:2em;
+    width:10em;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    text-shadow: 1px 2px 2px rgb(233, 231, 240), 0 0 2em rgb(108, 77, 192), 0 0 0.2em rgb(253, 21, 126);
+}
+
+ul{
+    list-style-type: none;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    top:200px;
+}
+
+ul li{
+    display: grid;
+    grid-template-columns: 20% auto;
+    width: 8em;
+    top:2.5em; 
+    left: 0.1em;
+    border-radius: 10px;
+    padding:20px;
+    cursor: pointer;
+    transform: rotateY(-20deg) rotateX(25deg) skewY(5deg);
+    position: absolute;
+    border-bottom: 4px solid ;
+    border: linear-gradient(45deg, rgba(141, 58, 197, 0.3), rgba(114, 86, 190, 0.3));
+    text-shadow: 1px 1px 2px rgb(197, 51, 161), 0 0 1em rgb(74, 22, 90), 0 0 0.2em rgb(125, 84, 223);
+    mix-blend-mode:multiply;
+    font-weight: 800;
+    font-size: 1.9em; 
+    text-align: center;
+    user-select:none;
+    -webkit-user-select: none;
+    -moz-user-select: none;   
+}
+
+ul li:nth-child(1){
+    background: rgb(255, 26, 255,0.4);
+    top:3.4em;
+}
+
+ul li:nth-child(2){
+    top:5.8em;
+    background: rgb(77, 121, 255,0.4);
+}
+
+ul li:nth-child(3){
+    top: 8.4em;
+    background: rgb(167, 161, 247,0.4);
+}
+
+ul li:nth-child(4){
+    top:11.1em;
+    background: rgba(255, 51, 51, 0.4);
+	font-color : #ffffff;
+}
+
+ul li:hover{
+    transform: rotateY(10deg) rotateX(6deg) scale(1.02);
+    -webkit-transform: rotateY(10deg) rotateX(6deg) scale(1.02);
+    -moz-transform: rotateY(10deg) rotateX(6deg) scale(1.02);
+    transition: transform 0.6s ease-out;
+    -webkit-transform: transform 1s ease-out;
+    -moz-transform: transform 0.4s ease-out;
+    z-index: 999;
+    mix-blend-mode: normal;
+}
+
+@keyframes selectoption{
+    0%{transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);}
+    50%{transform:  scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);}
+    100%{transform: scale(1);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);}
+}
+audio {
+	display:none;
+}
+/* Endingnya oy*/
+</style>
+</head>
+<body>
+<div class="placeholder"> 
+        <canvas id="universe" style="height:650px"></canvas>
+        <div class="container" id="containerId">
+            <h1>SPACE</h1>
+            <div id="menu">
+                <ul>
+                    <li onclick="window.location.href='https://www.codepolitan.com/belajar-html-dasar'">
+                        <span>NewGame</span>
+                    </li>
+                    <li onclick="window.location.href='https://www.dewaweb.com/blog/belajar-css-pengertian-peran-fungsi-dan-macamnya/'">
+                        <span>Continue</span>
+                    </li>
+                    <li onclick="window.location.href='https://sis.binus.ac.id/2018/02/02/pengenalan-java-console/'">
+                        <span>Options</span>
+                    </li>
+					</a>
+                    <li onclick="window.location.href='4.html'">
+                        <span>Exit</span>
+                    </li>
+                </ul>
+				<audio autoplay loop> 
+					<source src="laguku.mp3" type="audio/ogg">
+				</audio>
+            </div>
+        </div>
+    </div>
+	<div class="bggerak">
+<img src="gambar/bulan.png" alt="moon">
+<div class="bintang"></div>
+<div class="twink"></div>
+<div class="awanawan"></div>
+</body>
